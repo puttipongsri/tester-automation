@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.13.0 on win32)" generated="2024-10-24T22:03:27.325221" rpa="false" schemaversion="5">
+<suite id="s1" name="Valid Login" source="C:\Users\atSine\Desktop\robotframework\robotframework\login_tests\valid_login.robot">
+<test id="s1-t1" name="Valid Login" line="9">
+<kw name="Open Browser To Login Page" owner="resource">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-10-24T22:03:27.564693" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3000/LoginPage'.</msg>
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-10-24T22:03:27.564288" elapsed="1.695528"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-10-24T22:03:29.259998" elapsed="0.030190"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>${DELAY}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-10-24T22:03:29.290608" elapsed="0.000530"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>css=input.w-96.min-h-12</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-10-24T22:03:29.291389" elapsed="1.018043"/>
+</kw>
+<status status="PASS" start="2024-10-24T22:03:27.563264" elapsed="2.746772"/>
+</kw>
+<kw name="Input Username" owner="resource">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-24T22:03:30.313707" level="INFO">Typing text 'bank' into text field 'css=input.w-96.min-h-12'.</msg>
+<arg>css=input.w-96.min-h-12</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-24T22:03:30.312771" elapsed="3.270843"/>
+</kw>
+<arg>bank</arg>
+<status status="PASS" start="2024-10-24T22:03:30.311355" elapsed="3.272567"/>
+</kw>
+<kw name="Input Password" owner="resource">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//input[@type='password']</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-10-24T22:03:33.585291" elapsed="2.046056"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-24T22:03:35.633224" level="INFO">Typing text '1234' into text field 'xpath=//input[@type='password']'.</msg>
+<arg>xpath=//input[@type='password']</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-24T22:03:35.632203" elapsed="3.413864"/>
+</kw>
+<arg>1234</arg>
+<status status="PASS" start="2024-10-24T22:03:33.584682" elapsed="5.462105"/>
+</kw>
+<kw name="Submit Credentials" owner="resource">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css=button.bg-primary</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-10-24T22:03:39.050662" elapsed="2.080691"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-10-24T22:03:41.133327" level="INFO">Clicking button 'css=button.bg-primary'.</msg>
+<arg>css=button.bg-primary</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-24T22:03:41.132410" elapsed="5.130489"/>
+</kw>
+<status status="PASS" start="2024-10-24T22:03:39.048928" elapsed="7.214430"/>
+</kw>
+<kw name="Welcome Page Should Be Open" owner="resource">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<msg time="2024-10-24T22:04:03.485235" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-13.png"&gt;&lt;img src="selenium-screenshot-13.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-10-24T22:04:03.485944" level="FAIL">Text 'ลงรับหนังสือ' did not appear in 15 seconds.</msg>
+<arg>ลงรับหนังสือ</arg>
+<arg>timeout=15s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="FAIL" start="2024-10-24T22:03:46.265499" elapsed="17.227438">Text 'ลงรับหนังสือ' did not appear in 15 seconds.</status>
+</kw>
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<arg>${WELCOME URL}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="NOT RUN" start="2024-10-24T22:04:03.493362" elapsed="0.000080"/>
+</kw>
+<status status="FAIL" start="2024-10-24T22:03:46.264636" elapsed="17.229089">Text 'ลงรับหนังสือ' did not appear in 15 seconds.</status>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-10-24T22:04:03.494572" elapsed="3.199509"/>
+</kw>
+<status status="FAIL" start="2024-10-24T22:03:27.562139" elapsed="39.132184">Text 'ลงรับหนังสือ' did not appear in 15 seconds.</status>
+</test>
+<doc>A test suite with a single test for valid login.
+
+This test has a workflow that is created using keywords in
+the imported resource file.</doc>
+<status status="FAIL" start="2024-10-24T22:03:27.326649" elapsed="39.368848"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Valid Login">Valid Login</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-10-24T22:03:27.360421" level="ERROR">Error in file 'C:\Users\atSine\Desktop\robotframework\robotframework\login_tests\resource.robot' on line 10: Setting variable '${VALID PASSWORD} 123' failed: Invalid variable name '${VALID PASSWORD} 123'.</msg>
+</errors>
+</robot>

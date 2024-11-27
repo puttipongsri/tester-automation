@@ -1,0 +1,21 @@
+1727504406703	geckodriver	INFO	Listening on 127.0.0.1:51570
+1727504409774	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51571" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\ASUS\\AppData\\Local\\Temp\\rust_mozprofilerFG6Zp"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727504410058	Marionette	INFO	Marionette enabled
+1727504410154	Marionette	INFO	Listening on port 51578
+WebDriver BiDi listening on ws://127.0.0.1:51571
+Read port: 51578
+1727504410315	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:51571/devtools/browser/62646354-9e98-456d-9c64-64a03752a488
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://melivecode.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://melivecode.com."
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=G-0VG205EM34, line 595: Script terminated by timeout at:
+h.Ah@https://www.googletagmanager.com/gtag/js?id=G-0VG205EM34:595:487
+get@https://www.googletagmanager.com/gtag/js?id=G-0VG205EM34:594:119
+stop@https://www.googletagmanager.com/gtag/js?id=G-0VG205EM34:594:87
+h.Ok/c/<@https://www.googletagmanager.com/gtag/js?id=G-0VG205EM34:594:410
+
+1727504429597	Marionette	INFO	Stopped listening on port 51578
+Dynamically enable window occlusion 1
